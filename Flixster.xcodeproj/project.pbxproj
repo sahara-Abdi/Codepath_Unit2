@@ -13,6 +13,10 @@
 		5375847D29B4BE74000238C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5375847B29B4BE74000238C7 /* Main.storyboard */; };
 		5375847F29B4BE75000238C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5375847E29B4BE75000238C7 /* Assets.xcassets */; };
 		5375848229B4BE75000238C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5375848029B4BE75000238C7 /* LaunchScreen.storyboard */; };
+		5375848A29B4BF25000238C7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375848929B4BF25000238C7 /* Movie.swift */; };
+		5375848C29B4C406000238C7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375848B29B4C406000238C7 /* MovieCell.swift */; };
+		5375849929B4CADD000238C7 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 5375849829B4CADD000238C7 /* Nuke */; };
+		5375849B29B4D0AE000238C7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375849A29B4D0AE000238C7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		5375847E29B4BE75000238C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5375848129B4BE75000238C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5375848329B4BE75000238C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5375848929B4BF25000238C7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		5375848B29B4C406000238C7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		5375849A29B4D0AE000238C7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5375849929B4CADD000238C7 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,9 @@
 				5375847529B4BE74000238C7 /* AppDelegate.swift */,
 				5375847729B4BE74000238C7 /* SceneDelegate.swift */,
 				5375847929B4BE74000238C7 /* ViewController.swift */,
+				5375849A29B4D0AE000238C7 /* DetailViewController.swift */,
+				5375848B29B4C406000238C7 /* MovieCell.swift */,
+				5375848929B4BF25000238C7 /* Movie.swift */,
 				5375847B29B4BE74000238C7 /* Main.storyboard */,
 				5375847E29B4BE75000238C7 /* Assets.xcassets */,
 				5375848029B4BE75000238C7 /* LaunchScreen.storyboard */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = Flixster;
+			packageProductDependencies = (
+				5375849829B4CADD000238C7 /* Nuke */,
+			);
 			productName = Flixster;
 			productReference = 5375847229B4BE74000238C7 /* Flixster.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 5375846929B4BE74000238C7;
+			packageReferences = (
+				5375849729B4CADD000238C7 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 5375847329B4BE74000238C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +157,9 @@
 			files = (
 				5375847A29B4BE74000238C7 /* ViewController.swift in Sources */,
 				5375847629B4BE74000238C7 /* AppDelegate.swift in Sources */,
+				5375848A29B4BF25000238C7 /* Movie.swift in Sources */,
+				5375849B29B4D0AE000238C7 /* DetailViewController.swift in Sources */,
+				5375848C29B4C406000238C7 /* MovieCell.swift in Sources */,
 				5375847829B4BE74000238C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5375849729B4CADD000238C7 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5375849829B4CADD000238C7 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5375849729B4CADD000238C7 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5375846A29B4BE74000238C7 /* Project object */;
 }
