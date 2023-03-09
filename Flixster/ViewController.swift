@@ -32,6 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         tableView.dataSource = self
         super.viewDidLoad()
+       
         movies = Movie.MyMovies
         print(movies)
         // Do any additional setup after loading the view.
@@ -61,7 +62,12 @@ class ViewController: UIViewController, UITableViewDataSource {
             // Deselect the row at the corresponding index path
             tableView.deselectRow(at: indexPath, animated: true)
         }
+      
+    }
+    
+  
+    
     }
 
     
-}
+
