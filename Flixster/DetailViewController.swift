@@ -20,12 +20,12 @@ class DetailViewController: UIViewController {
     var movie: Movie!
     override func viewDidLoad() {
         super.viewDidLoad()
-        Nuke.loadImage(with: movie.poster, into: MovieImageView)
-        MovieTitle.text = movie.title
-        MovieBlurb.text = movie.description
+        Nuke.loadImage(with:URL(string:"https://image.tmdb.org/t/p/w500" + movie.poster_path.absoluteString)!, into: MovieImageView)
+        MovieTitle.text = movie.original_title
+        MovieBlurb.text = movie.overview
         MovieAverageVote.text
-        = String(movie.voteAverage)
-        MovieVotes.text = String(movie.votecount)
+        = String(movie.vote_average)
+        MovieVotes.text = String(movie.vote_count)
         MoviePopularity.text = String(movie.popularity)
         
         

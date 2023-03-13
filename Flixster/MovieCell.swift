@@ -14,11 +14,10 @@ class MovieCell: UITableViewCell {
         // Initialization code
     }
     func configure(with movies: Movie) {
-        movieTitle.text = movies.title
-        movieBlurb.text = movies.description
-
-        // Load image async via Nuke library image loading helper method
-        Nuke.loadImage(with: movies.poster, into: movieImageView)
+        movieTitle.text = movies.original_title
+        movieBlurb.text = movies.overview
+//        Load image async via Nuke library image loading helper method
+        Nuke.loadImage(with:URL(string:"https://image.tmdb.org/t/p/w500" + movies.poster_path.absoluteString)!, into: movieImageView)
         
     }
     @IBOutlet weak var movieTitle: UILabel!
