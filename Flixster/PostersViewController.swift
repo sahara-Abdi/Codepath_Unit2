@@ -124,6 +124,8 @@ class PostersViewController: UIViewController, UICollectionViewDataSource {
             detailViewController.movie = movie
         }
     }
+   
+    
         
         /*
          // MARK: - Navigation

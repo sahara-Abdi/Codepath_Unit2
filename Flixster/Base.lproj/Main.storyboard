@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2837.4045801526718" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1624" y="-133"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="lUe-8m-Klk">
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49m-lo-FCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3576.3358778625952" y="-12.67605633802817"/>
+            <point key="canvasLocation" x="2389" y="-133"/>
         </scene>
         <!--Movies-->
         <scene sceneID="sDs-5C-B8w">
@@ -229,7 +229,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swV-MQ-N2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2017.5572519083969" y="-92.253521126760575"/>
+            <point key="canvasLocation" x="2071" y="518"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kbb-wV-joG">
@@ -248,7 +248,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axU-v1-MMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1367" y="-82"/>
+            <point key="canvasLocation" x="1442" y="518"/>
         </scene>
         <!--Posters View Controller-->
         <scene sceneID="9PH-JA-VTT">
@@ -283,6 +283,7 @@
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="PosterImageView" destination="b7h-25-t5p" id="weC-Va-fTW"/>
+                                            <segue destination="qqZ-XF-RJH" kind="show" id="yWf-1g-miy"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -308,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPy-oG-nD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718.32061068702285" y="-64.08450704225352"/>
+            <point key="canvasLocation" x="819" y="-133"/>
         </scene>
         <!--Posters-->
         <scene sceneID="Exd-y8-Hrh">
@@ -330,6 +331,9 @@
             <point key="canvasLocation" x="-208.3969465648855" y="-64.08450704225352"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jG2-M0-pfw"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="doc.richtext.fill.ar" catalog="system" width="115" height="128"/>
         <image name="playpause.fill" catalog="system" width="128" height="69"/>
